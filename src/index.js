@@ -9,8 +9,8 @@ const app = express();
 // Middlewares
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-// import cors from 'cors';
-//app.use(cors());
+import cors from 'cors';
+app.use(cors());
 
 app.use('/users', routes.user);
 app.use('/merchandise', routes.merchandise);

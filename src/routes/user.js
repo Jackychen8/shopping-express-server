@@ -9,7 +9,6 @@ Need:
     3. Checkout/Empty Cart and add items to Purchase History X
 */
 import { Router } from 'express';
-import uuidv4 from 'uuid/v4';
 
 import {
   getUser,
