@@ -36,7 +36,7 @@ router.post('/', (req, res) => {
     }
     return res.status(400).send({msg: "Wrong password"});
   }
-  return res.send({msg: "User DNE"});
+  return res.status(400).send({msg: "User DNE"});
 });
 
 export default router;
